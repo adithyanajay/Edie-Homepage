@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&display=swap');
+
+:root {
+    /* ----------------------------------------------------------------- */
+    /* default font sizes */
+    --text-xs: 0.75rem;
+   --text-sm: 0.875rem;
+   --text-base: 1rem;
+   --text-lg: 1.125rem;
+   --text-xl: 1.25rem;
+   --text-2xl: 1.5rem;
+   --text-3xl: 1.875rem;
+   --text-4xl: 2.25rem;
+   --text-5xl: 3rem;
+   --text-6xl: 3.75rem;
+   --text-7xl: 4.5rem;
+   --text-8xl: 6rem;
+   --text-9xl: 8rem;
+
+   /* Responsive design default breakpoints  */
+   --sm: 640px;
+   --md: 768px;
+   --lg: 1024px;
+   --xl: 1280px;
+
+/* ------------------------------------------------------------------    */
+
+
+
+    /* colors */
+    --light-blue:#2D9CDB;
+    --light-orange:#EB5757;
+    --light-green: #27AE60;
+    --dark-blue: #100E1D;
+    --gray: #333333;
+
+    --gray-1: #333333;
+    --gray-2: #4F4F4F;
+    --gray-3: #828282;
+    --gray-6: #F2F2F2;
+
+    --not-active-btn: #E0E0E0;
+    --not-active-btn-text: #828282;
+    --footer-dark: #100E1D;
+
+    /* fonts */
+    --Poppins: 'Poppins', sans-serif;
+    --Heebo: 'Heebo', sans-serif;
+    --light: 300;
+    --Regular: 400;
+    --Medium: 500;
+    --Bold: 700;
+}
+
+.nav-link {
+    list-style: none;
+}
+
+.nav-link>a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/* Default font family decalred and other default values*/
+* {
+    font-family: var(--Poppins);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--gray);
+}
+
+.blue-text {
+    color: var(--light-blue);
+}
+
+.red {
+    color: var(--light-orange);
+}
+
+.gray-1 {
+    color: var(--gray-1);
+}
+.gray-2 {
+    color: var(--gray-2);
+}
+.gray-3 {
+    color: var(--gray-3);
+}
+
+.block {
+    display: block;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.width {
+    width: 90%;
+    text-align: left;
+    margin: auto;
+}
+@media (min-width:768px) {
+    .mid-width {
+        width: 90%;
+        text-align: left;
+    }
+    
+}
+
+
+.blue-btn {
+    background-color: var(--light-blue);
+    cursor: pointer;
+    transition: background-color .1s ease-in;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.blue-btn:hover {
+    background-color: var(--gray-3);
+}
+.white-text {
+    color: white;
+}
+
+.heading {
+    font-size: var(--text-2xl);
+    font-weight: var(--Medium);
+}
+
+@media (min-width:768px) {
+    .heading {
+        font-size: var(--text-3xl);
+    }
+}
+.footer {
+    background-color: var(--dark-blue);
+    width: 100%;
+}

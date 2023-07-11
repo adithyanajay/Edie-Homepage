@@ -1,95 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
 
-    <link rel="icon" href="devchallenges.png" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edie</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./assets/devchallenges.png" type="image/x-icon">
+</head>
 
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
+<body>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
 
-    <title>Devchallenges</title>
+  <nav class="navbar">
+    <h1 class="logo">
+      Edie
+    </h1>
 
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
+    <div class="hamburger nav-button" id="hamburger" onclick="openNav">
+      <img src="./assets/menu.svg" alt="hamburger" id="hamburger-img">
+    </div>
 
-      ul {
-        padding-left: 24px;
-      }
 
-      li {
-        margin-bottom: 8px;
-      }
+    <ul class="nav-links" id="nav-links">
+      <div class="close nav-button" id="close" onclick="closeNav">
+        <img src="./assets/close.svg" alt="">
+      </div>
+      <li class="nav-link"><a href="#home">Home</a></li>
+      <li class="nav-link"><a href="#services">Services</a></li>
+      <li class="nav-link"><a href="#our-works">Our Works</a></li>
+      <li class="nav-link"><a href="#clients">Clients</a></li>
+      <li class="nav-link"><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
 
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
+  <div class="nav-transparent-div" id="nav-transparent-div"></div>
+  <div class="app">
+    <main class="main" id="home">
+      <div class="main-text-cont width">
+        <p class="blue-text main-para">Unhappy with you website?</p>
+        <h1 class="main-heading gray-1 heading"><span class="block">We create beautiful</span> <span class="block">and
+            fast
+            web
+            services</span></h1>
+      </div>
 
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
+      <div class="hero-img">
+        <img src="./assets/heroImage.jpg" alt="">
+      </div>
 
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
+    </main>
 
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
+    <section class="width section-1-content ">
+      <h2 class="section-1-content-heading gray-1 heading">
+        <span class="block">Story, emotion</span> <span class="block">and purpose</span>
+      </h2>
+      <p class="section-1-content-para gray-2">
+        We help transform your ideas into real world applications that will outperform your toughest competition and
+        help you achieve your strategic goals in short period of time.
+      </p>
+
+      <div class="section-1-email-cont">
+        <p class="email-heading gray-3">
+          Want us to contact you?
+        </p>
+        <div class="form-cont">
+
+          <input type="email" placeholder="Email" class="email">
+          <button type="submit" class="blue-btn white-text email-btn">Join</button>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section-2" id="services">
+      <h1 class="section-2-heading gray-1 heading width">
+        <span class="block">We offer high</span> <span class="block">demand services</span>
+      </h1>
+
+      <div class="section-2-cards">
+
+        <div class="card">
+          <div class="card-img">
+            <img src="./assets/edit.svg" alt="edit">
+          </div>
+          <h1 class="card-heading gray-1">UI/UX Design</h1>
+          <p class="card-para gray-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla
+            consequat aliquet id quis turpis.</p>
+          <button class="card-btn blue-btn ">
+            <p class="white-text card-btn-text">Get started</p>
+          </button>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="./assets/code.svg" alt="code">
+          </div>
+          <h1 class="card-heading gray-1">Front End</h1>
+          <p class="card-para gray-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla
+            consequat aliquet id quis turpis.</p>
+          <button class="card-btn blue-btn ">
+            <p class="white-text card-btn-text">Get started</p>
+          </button>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="./assets/database.svg" alt="database">
+          </div>
+          <h1 class="card-heading gray-1">Backend</h1>
+          <p class="card-para gray-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla
+            consequat aliquet id quis turpis.</p>
+          <button class="card-btn blue-btn ">
+            <p class="white-text card-btn-text">Get started</p>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section-3" id="our-works">
+      <h1 class="section-3-heading gray-1 heading">
+        <span class="block">Good design means</span> <span class="block">good business</span>
+      </h1>
+
+      <div class="project-container">
+        <div class="project-cont-flex">
+          <div class="project-card project-top-padding">
+            <div class="project-card-img">
+              <img src="./assets/smarthome.jpg" alt="project -1">
+            </div>
+            <p class="project-card-para gray-3">
+              Full stack application
+            </p>
+            <h1 class="project-card-heading gray-1">
+              Smart home dashboard
+            </h1>
+          </div>
+
+          <div class="project-card project-bottom-padding">
+            <div class="project-card-img">
+              <img src="./assets/onboard.png" alt="project -2">
+            </div>
+            <p class="project-card-para gray-3">
+              UX/UI design
+            </p>
+            <h1 class="project-card-heading gray-1">
+              Onboard application
+            </h1>
+          </div>
+
+        </div>
+
+        <div class="project-cont-flex">
+          <div class="project-card project-top-padding">
+            <div class="project-card-img">
+              <img src="./assets/booking.png" alt="project -3">
+            </div>
+            <p class="project-card-para gray-3">
+              Mobile application
+            </p>
+            <h1 class="project-card-heading gray-1">
+              Booking system
+            </h1>
+          </div>
+
+          <div class="project-card project-bottom-padding end-proejct-card">
+            <div class="project-card-img">
+              <img src="./assets/juice-product.png" alt="project -4">
+            </div>
+            <p class="project-card-para gray-3">
+              Front End application
+            </p>
+            <h1 class="project-card-heading gray-1">
+              Juice product homepage
+            </h1>
+          </div>
+
+        </div>
+        <a href="#" class="project-section-link">
+          <p class="project-section-link-text  blue-text">See more</p>
+          <div class="link-img">
+            <img src="./assets/arrow.svg" alt="">
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-4">
+      <div class="section-4-content">
+        <h3 class="section-4-top-text red">
+          Meet the team
+        </h3>
+
+        <h1 class="section-4-heading gray-1 heading">
+          <span class="block">We are chilled</span> <span class="block">and a laidback</span> <span
+            class="block">team</span>
         </h1>
 
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
+        <p class="section-4-para gray-2">
+          <span class="block">Lorem ipsum dolor sit amet,</span> <span class="block">consectetur adipiscing elit.</span>
         </p>
       </div>
 
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
+      <div class="section-4-img-container">
+        <div class="section-4-img-cont" id="sec-4-img-1">
+          <img src="./assets/person3.png" alt="person-img">
+        </div>
+
+        <div class="section-4-img-cont" id="sec-4-img-2">
+          <img src="./assets/person1.png" alt="person-img">
+        </div>
+
+        <div class="section-4-img-cont" id="sec-4-img-3">
+          <img src="./assets/person2.png" alt="person-img">
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section-5 " id="clients">
+      <h1 class="section-5-heading gray-1">
+        “Fast and outstanding results. Edie understands their customer’s needs. They have a young and talented team.”
+      </h1>
+
+      <div class="section-5-profile">
+        <div class="section-5-profile-img">
+          <img src="./assets/person4.png" alt="">
+        </div>
+        <div class="profile-content">
+          <h1 class="profile-content-name gray-1">
+            Carlos Tran
+          </h1>
+          <p class="profile-content-job gray-3">
+            The Decorate Gatsby
+          </p>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer" id="contact">
+    <div class="footer-container">
+      <ul class="footer-nav-links white-text">
+        <li class="footer-nav-link"><a href="#home">Home</a></li>
+        <li class="footer-nav-link"><a href="#services">Services</a></li>
+        <li class="footer-nav-link"><a href="#our-works">Our Works</a> </li>
+        <li class="footer-nav-link"><a href="#clients">Clients</a></li>
+        <li class="footer-nav-link"><a href="#contact">Contact</a></li>
       </ul>
+  
+      <div class="socials">
+        <div class="social-logo">
+          <h1 class="social-logo-text white-text">Edie</h1>
+        </div>
+        <div class="social-links-container">
+          <a href="#" class="social-link">
+            <img src="./assets/instagram.svg" alt="instagram link">
+          </a>
+          <a href="#" class="social-link">
+            <img src="./assets/linkedin.svg" alt="instagram link">
+          </a>
+          <a href="#" class="social-link">
+            <img src="./assets/twitter.svg" alt="instagram link">
+          </a>
+        </div>
+      </div>
+  
+      <div class="section-1-email-cont">
+        <p class="email-heading gray-3">
+          Want us to contact you?
+        </p>
+        <div class="form-cont">
+  
+          <input type="email" placeholder="Email" class="email">
+          <button type="submit" class="blue-btn white-text email-btn">Join</button>
+  
+        </div>
+      </div>
     </div>
-  </body>
+      <div class="developer-link-div">
+        <p class="white-text developer-link">created by <a href="https://devchallenges.io/portfolio/adithyanajay">Adithya</a> - <a
+          href="https://devchallenges.io/">devchallenges.io</a>
+        </p>
+      </div>
+    
+    
+  </footer>
+</body>
+<script src="./scripts.js"></script>
+
 </html>
